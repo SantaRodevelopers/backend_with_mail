@@ -10,7 +10,7 @@ const App = () => {
 
   const generateEmailBody = () => {
     let emailBody = '<table border="1" style="border-collapse: collapse;">';
-    emailBody += '<tr><th>Name</th><th>Address</th><th>Age</th></tr>';
+    emailBody += '<tr><th style="color: white; padding:20px ;background-color: black;">Name</th><th>Address</th><th>Age</th></tr>';
     users.forEach(user => {
       emailBody += `<tr><td>${user.name}</td><td>${user.address}</td><td>${user.age}</td></tr>`;
     });
